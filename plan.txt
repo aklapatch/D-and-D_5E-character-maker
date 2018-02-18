@@ -1,0 +1,21 @@
+functions:
+int Selectitem(listnum, std::string*)
+holds an array of strings that prints them as 
+1. string 1
+2. string 2
+3. string 3
+etc
+at that point, a number will be entered, and the function will return that item selected.
+
+object list:
+Race: 
+Flaws
+Bonds
+Ideals
+Features/traits
+Languages/Proficiencies
+Class
+Weapons
+Tools
+equipment
+Background
