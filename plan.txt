@@ -1,11 +1,19 @@
 functions:
-int Selectitem(listnum, std::string*)
+int Selectitem(int listnum, std::string* items, std::string descirptor )
 holds an array of strings that prints them as 
 1. string 1
 2. string 2
 3. string 3
 etc
 at that point, a number will be entered, and the function will return that item selected.
+Using roll will always be the last option.
+
+
+Roll(int max)
+rolls from 1 to max, using c++11 rng
+
+each race will have its flaws, bonds Ideals, Features/traits and equipment inside of it.
+I will need to make all the least common denomenator objects first, before making bigger ones like people or classes
 
 object list:
 Race: 
