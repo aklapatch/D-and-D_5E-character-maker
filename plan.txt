@@ -3,6 +3,7 @@ have all the languages in it, but if I put in the enum for that languange name, 
 orgainzational example, to intialize the Language class, the Language class will only allow a member of the Language enum which will select
 the correct name and string for that particular object
 
+for expandability The program will read all things from text files.
 
 
 functions:

@@ -40,7 +40,36 @@ int Select(int listnum, std::string * itemlist, std::string describe){
 int Roll(int max){
 	std::random_device rng;
 	std::uniform_int_distribution<int> distr(1,max);
-	return distr;
+	return distr(rng);
 }
+
+std::vector Readlist(std::string infil){
+	ifstream fin;
+	std::string temp;
+	std::vector<std::string> strvec;
+	int i=0;
+	fin.open (infil);
 	
+	if(fin.is_open()){
+		while(getline (fin, temp)){
+			while(temp.at(i++)==' '){
+				if(temp.at(i)=='#'||temp.at(i)=='/'){
+					continue;
+				} else {
+					while(temp.at(temp.length())==' '){
+						temp.pop_back();
+					}
+					while(temp.at(0)==' '){
+						temp.erase(str.begin());
+					}
+					strvec.push_back(temp);
+				}
+			}
+		}
+		fin.close();
+	} else {
+		std::cout <<"File " <<infil << "failed to open." << std::endl;
+	}
+	return strvec;
+}
 	
