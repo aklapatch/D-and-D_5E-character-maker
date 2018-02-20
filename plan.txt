@@ -1,3 +1,10 @@
+plans in general. I am going to use a combination of enums and strings to arrange data. For example, the Languga string array will
+have all the languages in it, but if I put in the enum for that languange name, that will select the string with that name in it.
+orgainzational example, to intialize the Language class, the Language class will only allow a member of the Language enum which will select
+the correct name and string for that particular object
+
+
+
 functions:
 int Selectitem(int listnum, std::string* items, std::string descirptor )
 holds an array of strings that prints them as 
@@ -16,6 +23,9 @@ each race will have its flaws, bonds Ideals, Features/traits and equipment insid
 I will need to make all the least common denomenator objects first, before making bigger ones like people or classes
 
 object list:
+
+object (this is a generic object with a constructor and destructor that all basic objects will inherit
+
 Race: 
 Flaws
 Bonds
