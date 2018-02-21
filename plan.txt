@@ -5,36 +5,48 @@ the correct name and string for that particular object
 
 for expandability The program will read all things from text files.
 
+I am going to attempt to make this a gui, not a cmd-line thing since command lines are unfamiliar to people.
+Qt will be the basis of that GUI.
+There will be a main window that will look like a character sheet, and it wil have all the buttons to edit options.
+There will be drop-down boxes that allow selections.
+There will be a data storage system that allows for option editing, but that might have to come later.
+My current plan is to have a text file system that the user can edit that allows for option changing, such as removing or adding languages
+or classes or weapons.
 
-functions:
-int Selectitem(int listnum, std::string* items, std::string descirptor )
-holds an array of strings that prints them as 
-1. string 1
-2. string 2
-3. string 3
-etc
-at that point, a number will be entered, and the function will return that item selected.
-Using roll will always be the last option.
+GUI FUNCTIONS 
+get class:
+dropdown box with list
 
+get background:
+dropdown box with list
+
+get Race:
+same as previous
+
+the previous three will determine a lot of things
+after those three are selected, there will be dialog boxes that pop up to ask for
+
+what weapons you want, 
+your first languages
+your choice of proficiencies(check boxes) there will need to be a check if the person does too many or too few. a number somewhere
+your choice of saving throw proficiency (check box) same conditions as previous function
+flaws, bonds, traits (roll or input)
+access to features and traits based on race
+
+Error window(std::string)
+makes a popup window that displays that string as an error message, (will need to find an icon for it)
+
+RANDOM NOTES:
+All attributes (Strength, intelligence, etc) will be computed on the fly
+the rolls for those 15,14,13,12,10,8 or whatever can be input by the user or rolled by the computer.
+
+
+OTHER FUNCTIONS:
+std::vector<string> getitems(std::string )
+reads off the text file specified, and returns a vector with the items and their descriptions
+
+Reset (std::vector<string>)
+The argument will be a std::vector with the ability to replenish whatever text files are specitfied.
 
 Roll(int max)
 rolls from 1 to max, using c++11 rng
-
-each race will have its flaws, bonds Ideals, Features/traits and equipment inside of it.
-I will need to make all the least common denomenator objects first, before making bigger ones like people or classes
-
-object list:
-
-object (this is a generic object with a constructor and destructor that all basic objects will inherit
-
-Race: 
-Flaws
-Bonds
-Ideals
-Features/traits
-Languages/Proficiencies
-Class
-Weapons
-Tools
-equipment
-Background
