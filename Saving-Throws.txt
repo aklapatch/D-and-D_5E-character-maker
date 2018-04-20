@@ -1,7 +1,0 @@
-#Saving-Throws
-Strength
-Dexterity
-Constitution
-Intelligence
-Wisdom
-Charisma
